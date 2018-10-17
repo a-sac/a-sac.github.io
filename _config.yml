@@ -18,14 +18,14 @@ sass:
   style: compressed # expanded
 
 # SEO settings
-title: end2end
+title: Sérgio Costa
 description: "A free Jekyll theme for download"
 keywords: "Jekyll, theme, free, download, SEO, blog, web"
 url: http://nandomoreira.me
-baseurl: "/end2end"
+baseurl: "/a-sac"
 
 google_analytics: UA-52446115-1
-repo: http://github.com/nandomoreirame/end2end
+repo: http://github.com/a-sac/a-sac.github.io
 disqus_shortname: "nandothemes"
 disqus_site_shortname: "nandothemes"
 
