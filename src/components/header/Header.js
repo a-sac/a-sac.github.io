@@ -1,7 +1,4 @@
 import React from 'react';
-import { FaGithub } from '@react-icons/all-files/fa/FaGithub';
-import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter';
-import { GrMail } from '@react-icons/all-files/gr/GrMail';
 
 import headerStyles from './header.module.css';
 
