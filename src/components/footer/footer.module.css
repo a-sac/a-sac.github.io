@@ -11,11 +11,11 @@
   margin: 0 auto 10px;
 }
 
-.icon{
+.icon {
   padding: 10px;
   color: black;
 }
 
 .icon:hover {
-  color: grey;
+  color: #daa06d;
 }

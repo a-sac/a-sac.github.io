@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
-import cardStyles from './card.module.css';
+import * as cardStyles from './card.module.css';
 
 const Card = () => {
   const query = useStaticQuery(graphql`
@@ -24,12 +24,18 @@ const Card = () => {
       </div>
       <div className={ cardStyles.about }>
         <h5 className={ cardStyles.h5 }>
-          Sérgio Costa
+          Hi, I'm Sérgio Costa!
         </h5>
         <h6 className={ cardStyles.h6 }>
-            Software Engineer @nutrium. Ready to learn about any topic <span role="img" aria-label="nerd">🤓</span>.
-            Loves <span role="img" aria-label="beer">🍻</span> and <span role="img" aria-label="coffee">☕</span>.
+            Product Manager <a className={ cardStyles.link } href="https://nutrium.com/en" target="_blank">@nutrium</a>. 🚀
+            <br/>
+            Ready to learn about any topic 🤓.
+            <br/>
+            Loves 🍻, ☕ and, clearly, emojis.
         </h6>
+      </div>
+      <div className={ cardStyles.hey }>
+        <span role="img" aria-label="nerd">👋</span>
       </div>
     </div>
   );

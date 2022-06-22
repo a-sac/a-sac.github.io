@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "asac",
+    title: "Sérgio Costa",
     description: "Whoever is reading this: you are awesome!",
     author: "@sergio_alvesc",
     image: "img.jpg"
@@ -21,7 +21,6 @@ module.exports = {
     },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-netlify-cms",
     "gatsby-plugin-sass"
   ],
 };
