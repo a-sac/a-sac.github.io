@@ -1,12 +1,13 @@
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   box-sizing: border-box;
   max-width: 60%;
   margin: auto;
-  padding: 40px 30px;
-  background: rgba(186,140,105, 0.1);
-  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+  padding: 40px;
+  background: rgba(186, 140, 105, 0.1);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
@@ -40,6 +41,41 @@
   margin: 0 0 0.35em;
 }
 
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #daa06d;
+}
+
+.hey {
+  font-size: 100px;
+  text-align: center;
+  align-self: center;
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .h5 {
+    font-size: 1.5rem;
+  }
+
+  .h6 {
+    font-size: 0.9rem;
+  }
+
+  .about {
+    margin-left: 20px;
+  }
+
+  .hey {
+    margin-left: 20px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .h5 {
     font-size: 1.4rem;
@@ -53,14 +89,19 @@
     margin-left: 20px;
   }
 
+  .hey {
+    margin-left: 0;
+  }
+
   .img {
     width: 130px;
     height: 130px;
   }
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 800px) {
   .container {
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 80%;
   }
@@ -75,11 +116,17 @@
 
   .about {
     margin-left: 0;
-    text-align: center;
+    padding: 20px;
   }
 
   .img {
     width: 150px;
     height: 150px;
+  }
+}
+
+@media only screen and (max-width: 598px) {
+  .about {
+    text-align: center;
   }
 }
