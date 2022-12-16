@@ -47,11 +47,22 @@ const Photography = () => {
   return (
     <Layout body={ photographyStyles.body }>
       <div className={ photographyStyles.container }>
-        { cardViewIsActive ? <Lightbox image={ selectedUrl } title="by Sérgio Costa" onClose={ (e) => closeModal(e) } allowRotate={ false }/> : <></>}
+        {
+          cardViewIsActive ?
+            <Lightbox image={ selectedUrl } title="by Sérgio Costa" onClose={ (e) => closeModal(e) } allowRotate={ false }/> :
+            <></>
+        }
         {
           query.allFile.edges.map((img, index) => {
             return (
-              <div key={ index } className={ photographyStyles.cell } onClick={(e) => openCardView(e, img.node.childImageSharp.fluid.src)}>
+              <div
+                key      ={ index }
+                role     = "menuitem"
+                tabIndex ={ index }
+                className={ photographyStyles.cell }
+                onClick  ={(e) => openCardView(e, img.node.childImageSharp.fluid.src)}
+                onKeyDown={(e) => openCardView(e, img.node.childImageSharp.fluid.src)}
+              >
                 <Img fluid={ img.node.childImageSharp.fluid } className={ photographyStyles.img }/>
               </div>
             )

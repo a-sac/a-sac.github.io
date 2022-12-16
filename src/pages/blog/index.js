@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../../components/layout/Layout'
 
-import * as blogStyles from './blog.module.css';
+// import * as blogStyles from './blog.module.css';
 
 const Blog = () => {
   return (

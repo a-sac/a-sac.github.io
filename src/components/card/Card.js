@@ -27,7 +27,7 @@ const Card = () => {
           Hi, I'm Sérgio Costa!
         </h5>
         <h6 className={ cardStyles.h6 }>
-            Product Manager <a className={ cardStyles.link } href="https://nutrium.com/en" target="_blank">@nutrium</a>.
+            Product Manager <a className={ cardStyles.link } href="https://nutrium.com/en" target="_blank" rel="noreferrer">@nutrium</a>.
             <br/>
             With a background on Software Engineering, but interest in areas such as product management, entrepreneurship and growth. 🚀
             <br/>
