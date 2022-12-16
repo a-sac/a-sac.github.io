@@ -1,6 +1,11 @@
 .container {
-  max-width: 60%;
-  margin: 20px auto 30px;
+  max-width: 1920px;
+  padding: 16px 0;
+}
+
+nav {
+  width: 60%;
+  margin: auto;
 }
 
 .links {
@@ -16,12 +21,12 @@
 }
 
 .link {
-  color: black;
+  color: #333333;
   text-decoration: none;
 }
 
 .link:hover {
-  color: #daa06d;
+  color: #a17040;
 }
 
 @media only screen and (max-width: 690px) {

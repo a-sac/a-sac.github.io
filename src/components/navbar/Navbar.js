@@ -17,6 +17,9 @@ const Navbar = () => {
           <Link className={ navbarStyles.link } to="/blog">
             <span>blog</span>
           </Link>
+          <Link className={ navbarStyles.link } to="/photography">
+            <span>photography</span>
+          </Link>
         </div>
       </nav>
     </div>
