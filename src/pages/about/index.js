@@ -2,9 +2,9 @@ import React from 'react';
 
 import Layout from '../../components/layout/Layout'
 
-// import * as blogStyles from './blog.module.css';
+// import * as aboutStyles from './about.module.css';
 
-const Blog = () => {
+const About = () => {
   return (
     <Layout>
 
@@ -12,4 +12,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default About;
